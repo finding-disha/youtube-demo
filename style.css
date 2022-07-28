@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, pre {
+body {
     margin: 0;
     font-family:  sans-serif;
 }
@@ -159,13 +159,19 @@ body, pre {
 .video-container__description {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
+    padding-left: 70px;
     font-size: 14px;
+}
+
+.video-container__description div { 
+    margin-bottom: 20px;
 }
 
 .comments-section {
     font-size: 14px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .comments-section a {
@@ -267,6 +273,11 @@ body, pre {
     .video-container__action .mdi {
         font-size: 12px;
     }
+
+    
+    .video-container__description {
+        padding-left: 0;
+    } 
 
 
     .suggestion__thumbnail img {
