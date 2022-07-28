@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body, pre {
+    margin: 0;
+    font-family:  sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 0 8px 0 #ccc;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.navbar__menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu-icon {
+    font-size: 30px;
+}
+
+.navbar__logo {
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.navbar__logo-sm {
+    display: none;
+}
+
+.navbar__search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__input-search {
+    height: 40px;
+    width: 540px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 0 8px;
+}
+
+.navbar__search .mdi {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.navbar__actions .mdi {
+    margin-left: 20px;
+    font-size: 28px;
+    color: #444;
+}
+
+.navbar__actions .mdi-magnify {
+    display: none;
+}
+
+.container {
+    display: flex;
+    padding: 40px;
+}
+
+.video-container {
+    width: 100%;
+    margin-right: 20px;
+
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.suggestions {
+    width: 40%;
+}
+
+.video-container__title {
+    font-size: 24px;
+    margin-top: 20px;
+
+}
+
+.video-container__analytics {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container__views {
+    color: #555;
+}
+
+.video-container__actions {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.video-container__action {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.video-container__action .mdi {
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.video-container__artist-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.artist-section__artist {
+    margin-left: 20px;
+}
+
+.artist-section__profile {
+    display: flex;
+}
+
+.artist-section__profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.artist-section__artist-name {
+    font-weight: bold;
+}
+
+.artist-section__subscribers {
+    font-size: 14px;
+    color: #444;
+    margin-top: 4px;
+}
+
+.artist-section__subscribe-button {
+    color: white;
+    background-color: rgb(204, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 2px;
+}
+
+.video-container__description {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.comments-section {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.comments-section a {
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.suggestion {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.suggestion__thumbnail {
+    width: 50%;
+}
+
+.suggestion__details {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.suggestion__title {
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.suggestion__artist {
+    font-size: 14px;
+    color: #444;
+    margin-top: 12px;
+}
+
+.suggestion__analytics {
+    font-size: 14px;
+    color: #444;
+    margin-top: 4px;
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+    .container {
+        display: block;
+        padding: 20px;
+    }
+    .suggestions {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 1023px) {
+    .navbar__search {
+        display: none;
+    }
+    .navbar__actions .mdi-magnify {
+        display: inline;
+    }
+
+    .video-container__title {
+        font-size: 20px;
+    }
+    .video-container__action .mdi {
+        font-size: 16px;
+    }
+    .video-container__views {
+        display: none;
+    }
+    .video-container__actions {
+        margin-left: -20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar__menu-icon {
+        font-size: 24px;
+    } 
+    .navbar__logo {
+        display: none;
+    }
+    .navbar__logo-sm {
+        display: block;
+        height: 44px;
+        width:auto;
+        margin-left: 8px;
+
+    }
+    .navbar__actions .mdi {
+        margin-left: 8px;
+        font-size: 24px;
+    }
+    .video-container__title {
+        font-size: 16px;
+    }
+    .video-container__action .mdi {
+        font-size: 12px;
+    }
+
+
+    .suggestion__thumbnail img {
+        height: 70px;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .suggestion__thumbnail img {
+        height: 60px;
+        width: auto;
+    }
+}
